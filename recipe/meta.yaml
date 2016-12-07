@@ -1,6 +1,6 @@
 {% set name = "keyrings.alt" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "2f1a55849504644795076291bcc66a7266e0388dea13fe23a89d25c99e355d22" %}
+{% set version = "1.2" %}
+{% set sha256 = "67079000434a358a42fb624e1f175a6a0f79f2b71171b368b4ee89d3f9385e82" %}
 
 package:
   name: {{ name|lower }}
@@ -31,6 +31,8 @@ test:
 about:
   home: https://github.com/jaraco/keyrings.alt
   license: MIT
+  license_family: MIT
+  license_file: LICENSE
   summary: 'Alternate keyring backend implementations for use with the keyring package.'
 
   doc_url: http://pythonhosted.org/keyrings.alt/
