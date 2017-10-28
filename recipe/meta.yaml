@@ -1,6 +1,6 @@
 {% set name = "keyrings.alt" %}
-{% set version = "1.2" %}
-{% set sha256 = "67079000434a358a42fb624e1f175a6a0f79f2b71171b368b4ee89d3f9385e82" %}
+{% set version = "2.3" %}
+{% set sha256 = "5cb9b6cdb5ce5e8216533e342d3e1b418ddd210466834061966d7dc1a4736f2d" %}
 
 package:
   name: {{ name|lower }}
@@ -19,9 +19,10 @@ requirements:
   build:
     - python
     - setuptools
-    - setuptools_scm
+    - setuptools_scm >=1.15.0
   run:
     - keyring
+    - six
     - python
 
 test:
