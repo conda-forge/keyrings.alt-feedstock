@@ -1,6 +1,6 @@
 {% set name = "keyrings.alt" %}
-{% set version = "3.0" %}
-{% set sha256 = "d6ac80f3b7d8bfaae415cf3e4500326383b3266fc01e2a5b1466bea88bc136e8" %}
+{% set version = "3.1" %}
+{% set sha256 = "b59c86b67b9027a86e841a49efc41025bcc3b1b0308629617b66b7011e52db5a" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -43,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - astaric
+    - yarikoptic
