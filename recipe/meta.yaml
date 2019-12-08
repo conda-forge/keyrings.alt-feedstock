@@ -1,6 +1,6 @@
 {% set name = "keyrings.alt" %}
-{% set version = "3.1" %}
-{% set sha256 = "b59c86b67b9027a86e841a49efc41025bcc3b1b0308629617b66b7011e52db5a" %}
+{% set version = "3.4.0" %}
+{% set sha256 = "91328ac4229e70b1d0061d21bf61d36b031a6b4828f2682e38c741812f6eb23d" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
