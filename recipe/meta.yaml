@@ -1,6 +1,6 @@
 {% set name = "keyrings.alt" %}
-{% set version = "3.1" %}
-{% set sha256 = "b59c86b67b9027a86e841a49efc41025bcc3b1b0308629617b66b7011e52db5a" %}
+{% set version = "3.5.2" %}
+{% set sha256 = "252eb8955b7060c1f64c9a78320cebb4c63266cad415000e760731e0730fc551" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Alternate keyring backend implementations for use with the keyring package.'
+  summary: Alternate keyring backend implementations for use with the keyring package.
 
   doc_url: http://pythonhosted.org/keyrings.alt/
   dev_url: https://github.com/jaraco/keyrings.alt/
