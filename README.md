@@ -1,11 +1,11 @@
-About keyrings.alt
-==================
+About keyrings.alt-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/keyrings.alt-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jaraco/keyrings.alt
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/keyrings.alt-feedstock/blob/main/LICENSE.txt)
 
 Summary: Alternate keyring backend implementations for use with the keyring package.
 
