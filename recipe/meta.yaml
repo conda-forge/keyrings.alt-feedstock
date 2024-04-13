@@ -13,22 +13,27 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
-    - setuptools
-    - setuptools_scm
+    - python >=3.8
+    - setuptools >=56
+    - setuptools_scm >=3.4.1
   run:
-    - keyring
-    - python >=3.7
+    - jaraco.classes
+    - jaraco.context
+    - python >=3.8
 
 test:
   imports:
     - keyrings.alt
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/jaraco/keyrings.alt
